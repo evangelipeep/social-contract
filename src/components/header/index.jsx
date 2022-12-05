@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { ReactComponent as LogoIcon } from '../../images/logo.svg'
 import { NavItem } from '../nav-item'
 import { NavMenu } from '../nav-menu'
