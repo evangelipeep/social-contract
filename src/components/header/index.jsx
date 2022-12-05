@@ -7,9 +7,8 @@ import { ЛИЧНЫЙКАБИНЕТ } from '../header/constants'
 
 export const Header = () => {
   return (
-    <header className='flex justify-between'>
+    <header className='flex justify-between items-center'>
       <LogoIcon />
-
       <nav className='flex space-x-6 ml-8 items-center'>
         <NavItem text='Контакты' />
         <NavItem text='Личный кабинет'>
