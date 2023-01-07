@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const borderStyles =
   'border-2 border-my-green hover:border-my-green-2 rounded-lg'
@@ -11,12 +12,15 @@ export const Button = ({
   isFilled = false,
 }) => {
   return (
-    <button
+    <motion.button
       className={`text-black px-5 py-2 ${hasBorder && borderStyles} ${
         isFilled && filledStyles
       }`}
+      whileHover={{ scale: 1.2 }}
+      onHoverStart={(e) => {}}
+      onHoverEnd={(e) => {}}
     >
       {children}
-    </button>
+    </motion.button>
   )
 }
