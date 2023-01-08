@@ -29,12 +29,22 @@ export const Header = () => {
         }}
         variants={pVariants}
       />
-      <nav className='flex space-x-6 ml-8 items-center'>
+      <motion.nav
+        className='flex space-x-6 ml-8 items-center'
+        initial={'hidden'}
+        animate={'visible'}
+        transition={{
+          delay: 0.5,
+          duration: 0.5,
+        }}
+        variants={pVariants}
+      >
+        <NavItem text='Калькулятор' />
         <NavItem text='Контакты' />
         <NavItem text='Личный кабинет'>
           <NavMenu items={ЛИЧНЫЙКАБИНЕТ} />
         </NavItem>
-      </nav>
+      </motion.nav>
     </header>
   )
 }
